@@ -1,0 +1,165 @@
+@import "colors", "typography", "bootstrap", "variables";
+
+/*=============================================
+=            Global CSS            =
+=============================================*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: $ff-Nunito-Regular;
+  font-size: $fs-normal;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  color: $c-black;
+}
+
+span {
+    color: $c-amber;
+}
+
+.at-container {
+  @extend .container;
+}
+
+.at-container-fluid {
+  @extend .container-fluid;
+}
+
+.at-row {
+  @extend .row;
+}
+
+.at-col {
+  @extend .col-12;
+}
+
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+// span {
+//     font-size: $fsx--large;
+//     font-family: $ff-raleway-black;
+
+//     @include media-breakpoint-up(md) {
+//         font-size: $fs-xx-large;
+//     }
+// }
+
+h1 {
+    font-size: $fs-x-large;
+    font-family: $ff-Nunito-Bold;
+
+    @include media-breakpoint-up(md) {
+        font-size: $fs-xm-large;
+    }
+}
+
+h2 {
+	font-size: $fs-x-large;
+    font-family: $ff-Nunito-Bold;
+
+    @include media-breakpoint-up(md) {
+        font-size: $fs-xm-large;
+    }
+}
+
+h3 {
+    font-size: $fs-large;
+    font-family: $ff-Nunito-Bold;
+
+    @include media-breakpoint-up(md) {
+        font-size: $fs-large;
+    }
+}
+
+h4 {
+	font-size: $fs-normal;
+    font-family: $ff-Nunito-Regular;
+
+    @include media-breakpoint-up(md) {
+        font-size: $fs-medium;
+    }
+}
+
+h5 {
+    font-size: $fs-small;
+    font-family: $ff-Nunito-Regular;
+
+    @include media-breakpoint-up(md) {
+        font-size: $fs-normal;
+    }
+}
+
+h6 {
+    font-size: $fs-x-small;
+    font-family: $ff-Nunito-Regular;
+
+    @include media-breakpoint-up(md) {
+        font-size: $fs-small;
+    }
+}
+
+p {
+    font-size: $fs-medium;
+
+    @include media-breakpoint-up(md) {
+        font-size: $fs-xs-medium;
+    }
+}
+
+a {
+    font-size: $fs-normal;
+
+    @include media-breakpoint-up(md) {
+        font-size: $fs-medium;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+.at-button {
+    @extend %at-button;
+}
+
+.at-button--background {
+    @extend %at-button--background;
+}
+
+.at-button--transparent {
+    @extend %at-button--transparent;
+}
+
+.at-left__section {
+    @extend .col-lg-6;
+}
+
+.at-right__section {
+    @extend .col-lg-6;
+}
+
+.at-col-3card {
+    @extend .col-xl-4;
+}
+
+// .at-section--heading {
+//     @extend %at-section--heading;
+// }
+
+
+
+/*=====  End of Global CSS  ======*/

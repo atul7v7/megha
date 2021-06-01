@@ -1,0 +1,52 @@
+/*----------  Button Extended   ----------*/
+
+%at-button {
+    border-radius: 3px 15px;
+    display: inline-block;
+    font-family: $ff-Nunito-Light;
+    min-width: 180px;
+    text-decoration: none !important;
+    padding: 12px 0;
+    text-align: center;
+    // transition: .3s ease-in-out;
+}
+
+%at-button--transparent {
+    background: none;
+    color: $c-white;
+    border: 1px solid $c-white;
+
+    &:hover {
+    //     background: $c-amber;
+    //     border: 1px solid $c-amber;
+    //     transition: .3s ease-in-out;
+        color: $c-white;
+    //     text-decoration: none;
+    }
+}
+
+%at-button--background {
+    background: $c-amber;
+    color: $c-bay-of-many;
+    border: 1px solid $c-amber;
+
+    // &:hover {
+    //     background: none;
+    //     color: $c-white;
+    //     border: 1px solid $c-white;
+    //     transition: .3s ease-in-out;
+    //     text-decoration: none;
+    // }
+}
+
+// %at-section--heading {
+//     position: relative;
+
+//     &:after {
+//         position: absolute;
+//         content: '';
+//         background: $c-amber;
+//         width: 4px;
+//         height: 50px;
+//     }
+// }

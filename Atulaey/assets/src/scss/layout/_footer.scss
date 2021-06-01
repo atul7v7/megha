@@ -1,0 +1,152 @@
+/*---------- TEAM  ----------*/
+
+.at-footer {
+	.at-footer-bg-pattern {
+		padding: 220px 0 50px 0;
+		color: #fff;
+		overflow: hidden;
+		position: relative;
+		z-index: 99;
+		background: $c-black;
+		line-height: 1.6;
+
+		&:after {
+			position: absolute;
+			left: 0;
+			right: 0;
+			height: 100%;
+			z-index: -1;
+			content: "";
+			display: block;
+			background: url('../../dist/image/wave-pattern.png') bottom no-repeat;
+			background-size: cover;
+			bottom: 0;
+			transform: rotate(180deg);
+		}
+
+		.at-footer--overlay {
+			position: absolute;
+			left: 0;
+			right: 0;
+			height: 100%;
+			z-index: -1;
+			background-color: #000000;
+			top: 0;
+			bottom: 0;
+			width: 100%;
+			opacity: .65;
+		}
+
+		.at-container {
+			.at-footer-row1 {
+				.at-footer-col1,
+				.at-footer-col2,
+				.at-footer-col3 {
+					.at-footer--logo {
+						margin-bottom: 30px;
+						margin-top: -80px;
+					}
+					.at-footer__brand-subject {
+						color: $c-white;
+						margin-bottom: 70px;
+						line-height: 1.6;
+					}
+					.at-footer__subscribe-us--heading {
+						color: $c-white;
+						font-weight: 800;
+						line-height: 1.6;
+						margin-bottom: 25px;
+					}
+					.at-footer__subscribe-us--text {
+						margin-bottom: 20px;
+						line-height: 1.6;
+
+						a {
+							color: $c-white;
+							opacity: .5;
+							transition: .3s linear all;
+							display: block;
+							text-decoration: none;
+
+							&:hover {
+								opacity: 1;
+								transition: .3s linear all;
+							}
+						}
+					}
+					.at-footer--subscribe-form {
+						display: flex;
+						position: relative;
+						margin-bottom: 60px;
+
+						input {
+							width: 100%;
+							border-radius: 10px;
+							padding: 10px 0 10px 10px;
+						}
+						button {
+							position: absolute;
+							border: none;
+							background: $c-amber;
+							padding: 0 20px;
+							border-radius: 10px;
+							right: 0;
+							top: 0;
+							bottom: 0;
+						}
+					}
+				}
+				.at-footer-col2 {
+
+					@include media-breakpoint-up(lg) {
+						padding-left: 75px;
+					}
+
+					@include media-breakpoint-up(xl) {
+						padding-left: 125px;
+					}
+				}
+			}
+
+			.at-footer-row2 {
+				.at-footer-col1,
+				.at-footer-col2,
+				.at-footer-col3 {
+					.at-footer__copyright--text,
+					.at-footer__terms--text,
+					.at-footer__privacy--text {
+						a {
+							color: $c-white;
+							text-decoration: none;
+							opacity: .5;
+							transition: .3s linear all;
+
+							&:hover {
+								opacity: 1;
+								transition: .3s linear all;
+							}
+						}
+					}
+				}
+
+				.at-footer-col2 {
+					.at-footer__terms--text {
+						@include media-breakpoint-up(lg) {
+							text-align: center;
+						}
+					}
+				}
+				.at-footer-col3 {
+					.at-footer__privacy--text {
+						text-align: left;
+
+						@include media-breakpoint-up(lg) {
+							text-align: right;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/*---------- END OF CARD  ----------*/

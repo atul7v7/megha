@@ -1,0 +1,283 @@
+/*----------  SERVICES BANNER  ----------*/
+
+.at-services__banner-wrapper {
+	padding-bottom: 50px;
+	padding-top: 50px;
+	background-color: #F7F9FB;
+
+	@include media-breakpoint-up(lg) {
+		padding-bottom: 100px;
+		padding-top: 80px;
+	}
+
+	.at-services__bg-container {
+		.at-services__row {
+
+			@include media-breakpoint-up(lg) {
+				align-items: center;
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			.at-services__content {
+				flex: 0 0 50%;
+				margin-top: 50px;
+
+				@include media-breakpoint-up(lg) {
+					max-width: 50%;
+				}
+
+				@include media-breakpoint-up(lg) {
+					margin-top: 0;
+				}
+				.at-services-inner-content {
+					padding: 0 15px;
+
+					@include media-breakpoint-up(sm) {
+						max-width: 520px;
+						margin: 0 auto;
+					}
+
+					@include media-breakpoint-up(md) {
+						max-width: 720px;
+						margin: 0 auto;
+					}
+
+					@include media-breakpoint-up(lg) {
+						max-width: 570px;
+						width: 100%;
+						padding-left: 100px;
+						padding-right: 15px;
+						margin: 0;
+					}
+
+					.at-services--heading {
+						text-shadow: 0 4px 4px rgba(0 , 0 , 0, 0.22);
+						margin-bottom: 20px;
+
+					}
+					.at-services--text {
+						margin-bottom: 30px;
+						width: 100%;
+						max-width: 430px;
+					}
+				}
+			}
+		}
+
+		.at-services__img {
+			flex: 0 0 50%;
+			margin-top: 50px;
+
+			@include media-breakpoint-up(lg) {
+				max-width: 50%;
+				margin-top: 0;
+			}
+
+			img {
+				width: 100%;
+				padding: 0 20px;
+
+				@include media-breakpoint-up(lg) {
+					width: auto;
+					padding: 0;
+				}
+			}
+		}
+	}
+}
+
+/*---------- END OF SERVICES BANNER  ----------*/
+
+/*----------  KNOW OUR SERVICES  ----------*/
+
+.at-know-services-wrapper {
+	padding-bottom: 50px;
+	padding-top: 50px;
+
+	@include media-breakpoint-up(lg) {
+		padding-bottom: 100px;
+		padding-top: 80px;
+	}
+
+	.at-know-services-container {
+		.at-know-services--heading {
+			text-shadow: 0 4px 4px rgba(0 , 0 , 0, 0.22);
+			margin-bottom: 80px;
+			text-align: center;
+
+		}
+		.at-know-services-row {
+			.at-know-services--left {
+				.at-know-services-inner {
+					display: flex;
+					align-items: flex-start;
+					justify-content: flex-start;
+
+					img {
+						margin-top: -30px;
+					}
+					.at-know-services--title {
+						padding: 0 0 0 20px;
+					}
+				}
+			}
+
+			.at-know-services--right {
+				margin-top: 50px;
+
+				@include media-breakpoint-up(lg) {
+					margin-top: 0;
+				}
+
+				.at-know-services--para {
+					
+				}
+			}
+		}
+	}
+}
+
+
+/*----------  END OF KNOW OUR SERVICES  ----------*/
+
+
+/*----------  WHAT WE DO  ----------*/
+
+.at-our-work-wrapper {
+	position: relative;
+	padding-bottom: 50px;
+	padding-top: 50px;
+
+	@include media-breakpoint-up(lg) {
+		padding-bottom: 100px;
+		padding-top: 80px;
+	}
+
+	&:before {
+		position: absolute;
+		content: '';
+		background: #F7F9FB;
+		top: 282px;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		z-index: -2;
+	}
+
+	.at-our-work-container {
+
+		.at-our-work-section--heading {
+			text-shadow: 0 4px 4px rgba(0 , 0 , 0, 0.22);
+			margin-bottom: 70px;
+			text-align: center;
+		}
+		.at-our-work-row {
+			.at-our-work__listing {
+				box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+				border-radius: 16px;
+				margin: 0 16px 20px;
+				background-color: $c-white;
+
+				@include media-breakpoint-up(lg) {
+					margin: 0 0 20px;
+					flex: 0 0 calc(50% - 20px);
+					max-width: calc(50% - 20px);
+
+					&:nth-child(2n+1) {
+						margin-right: 20px;
+					}
+				}
+
+				.at-our-work__inner-wrap {
+					.at-our-work__title {
+						margin: 20px 0;
+					}
+					.at-our-work__para {
+
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*---------- END OF WHAT WE DO  ----------*/
+
+/*----------  SERVICES SLIDER ----------*/
+
+
+
+
+
+
+
+/*---------- END OF SERVICES SLIDER ----------*/
+
+
+/*---------- CTA  ----------*/
+
+.at-services--cta-section {
+	padding-bottom: 50px;
+	padding-top: 50px;
+
+	@include media-breakpoint-up(lg) {
+		padding-bottom: 100px;
+		padding-top: 80px;
+	}
+
+	.at-services--cta-container {
+		.at-services--cat-row {
+			align-items: center;
+			position: relative;
+
+			.at-services-cta--left-section {
+				margin-bottom: 20px;
+
+				@include media-breakpoint-up(md) {
+					margin-bottom: 40px;
+				}
+
+				@include media-breakpoint-up(lg) {
+					margin-bottom: 50px;
+				}
+
+				.at-cta--quick-contact {
+
+				}
+				.at-services--cta--heading {
+					text-shadow: 0 4px 4px rgba(0 , 0 , 0, 0.22);
+
+				}
+			}
+			.at-cta-dotted-arrow {
+				position: absolute;
+				left: 30%;
+				top: 40%;
+				display: none;
+
+				@include media-breakpoint-up(md) {
+					max-width: 42%;
+					display: block;
+				}
+
+				@include media-breakpoint-up(lg) {
+					max-width: 48%;
+				}
+
+				@include media-breakpoint-up(xl) {
+					max-width: 100%;
+				}
+				.at-dotted-arrow {
+
+				}
+			}
+			.at-services-cta--right-section {
+				text-align: right;
+			}
+		}
+	}
+}
+
+/*---------- END OF CTA  ----------*/

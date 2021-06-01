@@ -1,0 +1,373 @@
+/*----------  CAREER BANNER  ----------*/
+
+.at-career__banner-wrapper {
+	padding-bottom: 50px;
+	padding-top: 50px;
+
+	@include media-breakpoint-up(lg) {
+		padding-bottom: 100px;
+		padding-top: 160px;
+	}
+	.at-career__bg-container {
+		.at-career-banner__row {
+			align-items: center;
+
+			.at-career-banner__content {
+				.at-career__inner-content {
+					.at-career__banner--heading {
+						text-shadow: 0 4px 4px rgba(0 , 0 , 0, 0.22);
+						margin-bottom: 20px;
+						font-size: 42px;
+
+						@include media-breakpoint-up(md) {
+							font-size: 50px;
+						}
+					}
+					.at-career__banner--text {
+						margin-bottom: 30px;
+						width: 100%;
+						@include media-breakpoint-up(lg) {
+							max-width: 430px;
+						}
+					}
+					.at-career-button__wrapper {
+						a {
+							padding-left: 30px;
+							padding-right: 30px;
+						}
+					}
+				}
+			}
+			.at-career-banner__img {
+				margin-top: 50px;
+
+				img {
+					margin: 0 auto;
+
+					@include media-breakpoint-up(lg) {
+						margin: 0 0 0 auto;
+					} 
+				}
+			}
+		}
+	}
+}
+
+/*---------- END OF CAREER BANNER  ----------*/
+
+/*----------  WE ARE HIRING  ----------*/
+
+.at-career--hiring-wrapper {
+	padding-bottom: 50px;
+	padding-top: 50px;
+	background-color: #F7F9FB;
+
+	@include media-breakpoint-up(lg) {
+		padding-bottom: 100px;
+		padding-top: 80px;
+	}
+
+	.at-career-hiring-container {
+		.at-career--heading {
+			text-shadow: 0 4px 4px rgba(0 , 0 , 0, 0.22);
+			margin-bottom: 70px;
+			text-align: center;
+		}
+
+		.at-career-hiring-row {
+			border-radius: 24px;
+			overflow: hidden;margin: 0 10px;
+
+			@include media-breakpoint-up(sm) {
+				margin: 0;
+			}
+
+			.at-career-position1 {
+				background-color: rgba(40,60,134,.5);
+				position: relative;
+				background-image: url('../../dist/image/hiring-pattern1.svg');
+				background-position: 50%;
+				background-repeat: no-repeat;
+				background-size: cover;
+				padding: 200px 0;
+
+				.at-career-inner-bg1 {
+				}
+			}
+			.at-career-position2 {
+				background-color: rgba(255, 193, 7, .5);
+				position: relative;
+				background-image: url('../../dist/image/hiring-pattern2.svg');
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				padding: 200px 0;
+
+				.at-career-inner-bg2 {
+				}
+			}
+			.at-career-position3 {
+				background-color: rgba(69, 162, 71, .5);
+				position: relative;
+				background-image: url('../../dist/image/hiring-pattern3.svg');
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				padding: 200px 0;
+
+				.at-career-inner-bg3 {
+				}
+			}
+			.at-career--grids {
+				cursor: pointer;
+
+				.at-career-content-wrap {
+					position: absolute;
+					top: 54%;
+					transform: translateY(-20%);
+					left: 0;
+					bottom: 0;
+					right: 0;
+					transition: .3s ease-in-out;
+					text-align: center;
+
+					.at-career--profile {
+						color: $c-white;
+					}
+					.at-career--work {
+						opacity: 0;
+						transition: .3s ease-in-out;
+						color: $c-white;
+					}
+				}
+
+				&:hover {
+					.at-career--work {
+						opacity: 1;
+						transition: .3s ease-in-out;
+					}
+					.at-career-content-wrap {
+						transform: translateY(-50%);
+						transition: .3s ease-in-out;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*----------  END OF WE ARE HIRING  ----------*/
+
+
+/*----------  RECRUITMENT  ----------*/
+
+.at-career__recruitment-wrapper {
+	padding-bottom: 50px;
+	padding-top: 50px;
+
+	@include media-breakpoint-up(lg) {
+		padding-bottom: 100px;
+		padding-top: 80px;
+	}
+
+	.at-career__recruitment-container {
+		.at-recruitment-section--heading {
+			text-shadow: 0 4px 4px rgba(0 , 0 , 0, 0.22);
+			margin-bottom: 70px;
+			text-align: center;
+		}
+		.at-carrer__recruitment-row {
+			.at-career__recruitment-col {
+				margin-bottom: 90px;
+
+				&:nth-child(2n) {
+					.at-career__recritment--process {
+						@include media-breakpoint-up(lg) {
+							justify-content: flex-end;
+						}
+					}
+				}
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				.at-career__recritment--process {
+					display: flex;
+					flex-wrap: wrap;
+					align-items: center;
+					background: #F8F9FA;
+					box-shadow: 0px 8px 25px #DCE0E3;
+					padding: 30px;
+
+					@include media-breakpoint-up(lg) {
+						background: transparent;
+						box-shadow: none;
+						padding: 0;
+					}
+
+
+					.at-recruitment-img {
+						width: 100%;
+						max-width: 60%;
+						margin: 0 auto;
+						margin-bottom: 60px;
+
+						@include media-breakpoint-up(lg) {
+							flex: 0 0 20%;
+							max-width: 20%;
+							margin: 0 50px 0 0;
+
+						}
+
+						img {
+							width: 100%;
+							max-width: 40%;
+							margin: 0 auto;
+							margin-bottom: 60px;
+						}
+					}
+					.at-recruitment--content {
+
+						@include media-breakpoint-up(lg) {
+							flex: 0 0 35%;
+							max-width: 35%;
+						}
+
+						.at-recruitment--heading {
+
+						}
+						.at-recruitment--text{
+
+						}
+					}
+				}
+				.at-career-dots-right {
+					display: none;
+
+					@include media-breakpoint-up(lg) {
+						display: block;
+					}
+				}
+
+				.at-career-dots-left {
+					display: none;
+
+					@include media-breakpoint-up(lg) {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*---------- END OF RECRUITMENT  ----------*/
+
+/*----------  FORM  ----------*/
+
+.at-career-form-wrapper {
+	padding-bottom: 50px;
+	padding-top: 50px;
+	background-image: url('../../dist/image/wave-pattern.png');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: relative;
+
+	&:after {
+		position: absolute;
+		left: 0;
+		right: 0;
+		height: 100%;
+		z-index: -1;
+		background-image: linear-gradient(
+			154.6deg
+			, rgba(69, 162, 71, 0.18) 14.92%, rgba(40, 60, 134, 0.18) 80.72%);
+		background: linear-gradient(
+			154.6deg
+			, rgba(69, 162, 71, 0.18) 14.92%, rgba(40, 60, 134, 0.18) 80.72%);
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		opacity: .65;
+		content: '';
+	}
+
+	@include media-breakpoint-up(lg) {
+		padding-bottom: 100px;
+		padding-top: 80px;
+	}
+
+	.at-career-form-container {
+		padding: 60px 15px 150px 15px;
+
+		.at-form-section--heading {
+			text-shadow: 0 4px 4px rgba(0 , 0 , 0, 0.22);
+			margin-bottom: 30px;
+		}
+
+		.at-career-form-row {
+			.at-career-form-col {
+				.at-career--form {
+					margin-bottom: 50px;
+
+					@include media-breakpoint-up(lg) {
+						margin-bottom: 0;
+					}
+
+					.form-group {
+						position: relative;
+
+						.at-form--icons {
+							width: 20px;
+							position: absolute;
+							top: 14px;
+							left: 30px;
+						}
+
+						.form-control {
+							padding: 24px 0;
+							padding-left: 65px;
+							background: #fff;
+							border-radius: 20px;
+							border: initial;
+							outline: initial!important;
+							color: #47404f;
+
+							&:focus {
+								box-shadow: none;
+							}
+						}
+						button {
+							display: block;
+							width: 100%;
+						}
+					}
+					.at-textarea {
+						position: relative;
+
+						.at-form--icons {
+							position: absolute;
+							top: 24px;
+						}
+
+					}
+				}
+				.at-form--newsletter-img {
+					width: 100%;
+
+					@include media-breakpoint-up(lg) {
+						margin: 0 0 0 auto;
+						width: auto;
+					}
+				}
+			}
+		}
+	}
+}
+/*---------- END OF FORM  ----------*/
+
+

@@ -1,0 +1,218 @@
+.at-header--wrapper {
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 22px 0;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    z-index: 999999;
+
+    .at-header--inner-wrap {
+        .at-header--container {
+            .at-header-menu-section {
+
+                @include media-breakpoint-down(sm) {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    background-color: #283c86;
+                    background-image: linear-gradient(
+                        -29deg
+                        ,#283c86,#45a247)!important;
+                    background-image: -o-linear-gradient(-29deg,#283c86 0,#45a247 100%)!important;
+                    background: linear-gradient(
+                        -29deg
+                        ,#283c86,#45a247)!important;
+                    top: 0;
+                    padding: 15px;
+                }
+
+                @include media-breakpoint-up(md) {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                .at-header--logo {
+                    width: 100%;
+                    max-width: 170px;
+                    @include media-breakpoint-up(md) {
+
+                    }
+
+                    img {
+
+                    }
+                }
+
+                .at-menu-section--list {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    @include media-breakpoint-down(sm) {
+                        display: none;
+                        padding: 20px 0;
+                    }
+
+                    @include media-breakpoint-up(md) {
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+
+                    .at-menu-section__list-items {
+
+                        @include media-breakpoint-up(md) {
+                            margin-right: 15px;
+
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                        }
+
+                        a {
+                            color: #ffffff;
+                            display: block;
+                            padding: 10px;
+                            text-decoration: none;
+
+                            &:hover {
+                                text-decoration: none;
+                            }
+
+                            @include media-breakpoint-up(md) {
+
+                                span {
+                                    width: 30px;
+                                    height: 3px;
+                                    background-color: $c-amber;
+                                    display: block;
+                                    margin-top: 2px;
+                                    transition: .3s linear all;
+                                    border-radius: 4px;
+                                }
+
+                                &:hover span {
+                                    width: 100%;
+                                    background-color: $c-black;
+                                    transition: .3s linear all;
+                                }
+
+                            }   
+                        }
+                    }
+                }
+
+                .show {
+                    display: block;
+                }
+
+                .at-hemburger {
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    position: absolute;
+                    top: 22px;
+                    right: 22px;
+                    z-index: 9;
+
+                    @include media-breakpoint-up(md) {
+                        display: none;
+                    }
+                    .at-hemburger-inner-wrap {
+                        position: relative;
+                        width: 20px;
+                        height: 20px;
+
+                        .at-header-toggler-bar {
+                            width: 20px;
+                            border-radius: 5px;
+                            height: 2px;
+                            background: $c-white;
+                            top: 0;
+                            position: absolute;
+
+                            &:nth-child(2) {
+                                top: unset;
+                                width: 15px;
+                                right: 0;
+                                top: 50%;
+                                transform: translateY(-50%);
+                            }
+
+                            &:nth-child(3) {
+                                top: unset;
+                                bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.at-header-fixed {
+    position: fixed!important;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0 , 0.28);
+    animation: .6s slideDown forwards;
+    transition: all .5s ease-in-out!important;
+    background-color: #283c86;
+    background-image: linear-gradient(
+        -29deg
+        ,#283c86,#45a247)!important;
+    background-image: -o-linear-gradient(-29deg,#283c86 0,#45a247 100%)!important;
+    background: linear-gradient(
+        -29deg
+        ,#283c86,#45a247)!important;
+    padding: 10px;
+}
+
+
+#at-about-us,
+#at-career,
+#at-services,
+#at-contact-us {
+    .at-header--wrapper {
+        .at-header--logo {
+            .at-white-logo {
+                display: none;
+
+                @include media-breakpoint-down(sm) {
+                    display: block;
+                }
+            }
+            .at-colored-logo {
+                @include media-breakpoint-down(sm) {
+                    display: none;
+                }
+            }
+        }
+        a {
+            color: $c-black;
+
+            @include media-breakpoint-down(sm) {
+                color: $c-white;
+            }
+        }
+    }
+    .at-header-fixed {
+        .at-header--logo {
+            .at-white-logo {
+                display: block;
+            }
+            .at-colored-logo {
+                display: none;
+            }
+        }
+        a {
+            color: $c-white;
+        }
+    }
+}

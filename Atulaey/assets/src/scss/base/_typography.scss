@@ -1,0 +1,75 @@
+/*==========================================================
+=            Typography Variable and Declaration            =
+============================================================*/
+@font-face {
+  font-family: "Nunito-Black";
+  src: url("../fonts/Nunito/Nunito-Black.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito-Bold";
+  src: url("../fonts/Nunito/Nunito-Bold.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito-ExtraBold";
+  src: url("../fonts/Nunito/Nunito-ExtraBold.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito-ExtraLight";
+  src: url("../fonts/Nunito/Nunito-ExtraLight");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito-Light";
+  src: url("../fonts/Nunito/Nunito-Light.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito-Regular";
+  src: url("../fonts/Nunito/Nunito-Regular.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito-SemiBold";
+  src: url("../fonts/Nunito/Nunito-SemiBold.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+
+/*----------  Font Family Variable  ----------*/
+
+$ff-Nunito-Black: "Nunito-Black";
+$ff-Nunito-Bold: "Nunito-Bold";
+$ff-Nunito-ExtraBold: "Nunito-ExtraBold";
+$ff-Nunito-ExtraLight: "Nunito-ExtraLight";
+$ff-Nunito-Light: "Nunito-Light";
+$ff-Nunito-Regular: "Nunito-Regular";
+$ff-Nunito-SemiBold: "Nunito-SemiBold";
+
+/*----------  Font Size Variable  ----------*/
+
+$fs-xx-large: 50px;
+$fs-xm-large: 42px;
+$fs-x-large: 30px;
+$fs-large: 24px;
+$fs-xs-medium: 20px;
+$fs-medium: 18px;
+$fs-normal: 16px;
+$fs-small: 14px;
+$fs-x-small: 12px;
+
+/*=====  End of Typography Variable and Declaration  ======*/

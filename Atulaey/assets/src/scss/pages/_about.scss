@@ -1,0 +1,352 @@
+/*----------  ABOUT BANNER  ----------*/
+
+.at-about__banner-wrapper {
+	padding-bottom: 50px;
+	padding-top: 50px;
+
+	@include media-breakpoint-up(lg) {
+		padding-bottom: 100px;
+		padding-top: 80px;
+	}
+	.at-about__bg-container {
+		.at-about-banner__row {
+			align-items: center;
+
+			.at-about-banner__content {
+				.at-about__inner-content {
+					.at-about__banner--heading {
+						text-shadow: 0 4px 4px rgba(0 , 0 , 0, 0.22);
+						margin-bottom: 20px;
+						font-size: 42px;
+
+						@include media-breakpoint-up(md) {
+							font-size: 50px;
+						}
+					}
+					.at-about__banner--text {
+						margin-bottom: 30px;
+						width: 100%;
+						@include media-breakpoint-up(lg) {
+							max-width: 430px;
+						}
+					}
+				}
+			}
+			.at-about-banner__img {
+				margin-top: 50px;
+
+				img {
+					margin: 0 auto;
+
+					@include media-breakpoint-up(lg) {
+						margin: 0 0 0 auto;
+					} 
+				}
+			}
+		}
+	}
+}
+
+/*---------- END OF ABOUT BANNER  ----------*/
+
+/*----------  OUR-STORY  ----------*/
+
+.at-about__our-story-wrapper {
+	padding-bottom: 50px;
+	padding-top: 50px;
+
+	@include media-breakpoint-up(lg) {
+		padding-bottom: 100px;
+		padding-top: 80px;
+	}
+
+	.at-our-story--heading-container {
+		.at-about__our-story--heading {
+			text-shadow: 0 4px 4px rgba(0 , 0 , 0, 0.22);
+			margin-bottom: 40px;
+			text-align: right;
+		}
+	}
+	.at-our-story__bg {
+		background-image: url('../../dist/image/our-story.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		position: relative;
+		height: 20vh;
+
+		@include media-breakpoint-up(sm) {
+			height: 30vh;
+		}
+		@include media-breakpoint-up(md) {
+			height: 40vh;
+		}
+		@include media-breakpoint-up(lg) {
+			height: 60vh;
+		}
+
+		.at-our-stroy__bg--overlay {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background: linear-gradient(147.64deg, rgba(69, 162, 71, 0.486) 11.48%, rgba(40, 60, 134, 0.468) 77.48%);
+		}
+	}
+	.at-about__our-story-container {
+		.at-about-our-story-row {
+			.at-about-our-story__content-wrap {
+				.at-about-our-story--bg {
+					background-image: url('../../dist/image/about-bg.png');
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: center center;
+					position: relative;
+					border-radius: 40px;
+					overflow: hidden;
+					margin-top: -50px;
+					display: flex;
+					flex-wrap: wrap;
+					align-items: center;
+					justify-content: center;
+					padding: 20px 30px;
+
+					@include media-breakpoint-up(sm) {
+						padding: 50px 70px;
+					}
+					
+					.at-about-our-story__content-overlay {
+						position: absolute;
+						content: '';
+						top: 0;
+						left: 0;
+						bottom: 0;
+						right: 0;
+						background: linear-gradient(180deg, rgba(38, 50, 56, 0.7) 19.27%, rgba(38, 50, 56, 0.7) 44.79%, rgba(248, 217, 15, 0.35) 83.33%);
+					}
+					.at-about-our-story--text {
+						color: $c-white;
+						z-index: 9;
+					}
+				}
+			}
+			.at-about-our-story-imgs {
+				position: relative;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-around;
+				margin-top: 50px;
+
+				@include media-breakpoint-up(lg) {
+					display: block;
+					margin-top: 0;
+				}
+
+				.at-about-our-story-img1 {
+					width: 100%;
+					max-width: 200px;
+
+					@include media-breakpoint-up(md) {
+						max-width: 300px;
+					}
+					
+				}
+				.at-about-our-story-img2 {
+					width: 100%;
+					max-width: 200px;
+
+					@include media-breakpoint-up(md) {
+						max-width: 300px;
+					}
+					
+					@include media-breakpoint-up(lg) {
+						position: absolute;
+						right: 0;
+						bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*----------  END OF OUR-STORY  ----------*/
+
+
+/*----------  FILTER TEAM  ----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------- END OF FILTER TEAM  ----------*/
+
+/*----------  BUSINESS  ----------*/
+
+.at-about__business-wrapper {
+	padding-bottom: 50px;
+	padding-top: 50px;
+	background-color: #F7F9FB;
+
+	@include media-breakpoint-up(lg) {
+		padding-bottom: 100px;
+		padding-top: 80px;
+	}
+
+	.at-business__bg-container {
+		.at-about-business__row {
+
+			@include media-breakpoint-up(lg) {
+				align-items: center;
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			.at-about-business__img {
+				flex: 0 0 50%;
+
+				@include media-breakpoint-up(lg) {
+					max-width: 50%;
+				}
+
+				img {
+					width: 100%;
+					padding: 0 20px;
+
+					@include media-breakpoint-up(lg) {
+						width: auto;
+						padding: 0;
+					}
+				}
+			}
+			.at-about-business__content {
+				flex: 0 0 50%;
+				margin-top: 50px;
+
+				@include media-breakpoint-up(lg) {
+					max-width: 50%;
+				}
+
+				@include media-breakpoint-up(lg) {
+					margin-top: 0;
+				}
+				.at-about__business-inner-content {
+					padding: 0 15px;
+
+					@include media-breakpoint-up(sm) {
+						max-width: 520px;
+						margin: 0 auto;
+					}
+
+					@include media-breakpoint-up(md) {
+						max-width: 720px;
+						margin: 0 auto;
+					}
+
+					@include media-breakpoint-up(lg) {
+						max-width: 570px;
+						width: 100%;
+						padding-left: 100px;
+						padding-right: 15px;
+						margin: 0;
+					}
+
+					.at-about__business--heading {
+						text-shadow: 0 4px 4px rgba(0 , 0 , 0, 0.22);
+						margin-bottom: 20px;
+
+						.at-about__business--text {
+							margin-bottom: 30px;
+							width: 100%;
+							max-width: 430px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*---------- END OF BUSINESS  ----------*/
+
+
+/*---------- CTA  ----------*/
+
+.at-about--cta-section {
+	padding-bottom: 50px;
+	padding-top: 50px;
+
+	@include media-breakpoint-up(lg) {
+		padding-bottom: 100px;
+		padding-top: 80px;
+	}
+
+	.at-about--cta-container {
+		.at-about--cat-row {
+			align-items: center;
+			position: relative;
+
+			.at-about-cta--left-section {
+				margin-bottom: 20px;
+
+				@include media-breakpoint-up(md) {
+					margin-bottom: 40px;
+				}
+
+				@include media-breakpoint-up(lg) {
+					margin-bottom: 50px;
+				}
+
+				.at-cta--quick-contact {
+
+				}
+				.at-about--cta--heading {
+					text-shadow: 0 4px 4px rgba(0 , 0 , 0, 0.22);
+
+				}
+			}
+			.at-cta-dotted-arrow {
+				position: absolute;
+				left: 30%;
+				top: 40%;
+				display: none;
+
+				@include media-breakpoint-up(md) {
+					max-width: 42%;
+					display: block;
+				}
+
+				@include media-breakpoint-up(lg) {
+					max-width: 48%;
+				}
+
+				@include media-breakpoint-up(xl) {
+					max-width: 100%;
+				}
+				.at-dotted-arrow {
+
+				}
+			}
+			.at-about-cta--right-section {
+				text-align: right;
+			}
+		}
+	}
+}
+
+/*---------- END OF CTA  ----------*/
+
+
